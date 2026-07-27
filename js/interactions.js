@@ -1,0 +1,97 @@
+/* YUXINU — interactions: reveals, parallax, counters, nav, menu, form
+   Scroll-based (no IntersectionObserver) for maximum robustness. */
+(function(){
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let revealEls=[], parallaxEls=[], counterEls=[];
+
+  function animateCount(el){
+    const to=parseFloat(el.getAttribute("data-to")), dur=1400, t0=performance.now();
+    const pre=el.getAttribute("data-pre")||"", suf=el.getAttribute("data-suf")||"";
+    (function frame(t){
+      const p=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-p,3);
+      el.textContent=pre+Math.round(to*e)+suf;
+      if(p<1) requestAnimationFrame(frame);
+    })(t0);
+  }
+
+  function update(){
+    const vh=window.innerHeight, y=window.scrollY||window.pageYOffset;
+    const nav=document.querySelector(".nav");
+    if(nav){ if(y>40){nav.classList.add("nav-solid");nav.classList.remove("nav-top");} else {nav.classList.add("nav-top");nav.classList.remove("nav-solid");} }
+    // active nav link
+    const navLinks=document.querySelectorAll('.nav-links a[href^="#"]');
+    if(navLinks.length){
+      let current="";
+      document.querySelectorAll("section[id]").forEach(sec=>{
+        const r=sec.getBoundingClientRect();
+        if(r.top<=vh*0.42 && r.bottom>vh*0.42) current=sec.id;
+      });
+      navLinks.forEach(a=>a.classList.toggle("active", a.getAttribute("href")==="#"+current));
+    }
+
+    for(let i=revealEls.length-1;i>=0;i--){
+      const el=revealEls[i], r=el.getBoundingClientRect();
+      if(r.top < vh*0.90 && r.bottom > 0){ el.classList.add("in"); revealEls.splice(i,1); }
+    }
+    for(let i=counterEls.length-1;i>=0;i--){
+      const el=counterEls[i], r=el.getBoundingClientRect();
+      if(r.top < vh*0.85 && r.bottom > 0){ animateCount(el); counterEls.splice(i,1); }
+    }
+    if(!reduce){
+      for(const el of parallaxEls){
+        const speed=parseFloat(el.getAttribute("data-parallax"))||0.1;
+        const rect=el.parentElement.getBoundingClientRect();
+        const offset=(rect.top+rect.height/2-vh/2);
+        el.style.transform="translate3d(0,"+(-offset*speed).toFixed(1)+"px,0)";
+      }
+    }
+  }
+
+  let ticking=false;
+  function onScroll(){ if(!ticking){ requestAnimationFrame(()=>{update();ticking=false;}); ticking=true; } }
+
+  function initMenu(){
+    const burger=document.querySelector(".burger"), menu=document.querySelector(".mobile-menu");
+    if(!burger||!menu) return;
+    const close=()=>{ menu.classList.remove("open"); document.body.classList.remove("menu-open"); burger.setAttribute("aria-expanded","false"); };
+    burger.addEventListener("click",()=>{ const o=menu.classList.toggle("open"); document.body.classList.toggle("menu-open",o); burger.setAttribute("aria-expanded",o?"true":"false"); });
+    menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",close));
+    menu.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",close));
+    window.addEventListener("keydown",e=>{ if(e.key==="Escape") close(); });
+  }
+
+  function initForm(){
+    const form=document.querySelector("#contact-form");
+    if(!form) return;
+    form.addEventListener("submit",e=>{
+      e.preventDefault();
+      const d=new FormData(form);
+      const get=k=>(d.get(k)||"").toString().trim();
+      const nome=get("nome"),email=get("email"),org=get("org"),msg=get("msg");
+      const lang=window.__yxLang||"pt";
+      const dict=(window.YuxinuI18N&&window.YuxinuI18N.dict[lang])||{};
+      const subjMap={pt:"Contato pelo site — ",en:"Website contact — ",es:"Contacto desde el sitio — "};
+      const subject=(subjMap[lang]||subjMap.pt)+(org||nome||"Yuxinu");
+      const body="Nome / Name: "+nome+"\nE-mail: "+email+"\nOrganização / Organization: "+org+"\n\n"+msg;
+      const status=form.querySelector(".form-status");
+      if(status) status.textContent=dict["form.ok"]||"";
+      window.location.href="mailto:yuxinu@yuxinu.org?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+    });
+  }
+
+  function boot(){
+    revealEls=[...document.querySelectorAll(".reveal")];
+    parallaxEls=[...document.querySelectorAll("[data-parallax]")];
+    counterEls=[...document.querySelectorAll("[data-to]")];
+    if(reduce){ revealEls.forEach(e=>e.classList.add("in")); revealEls=[];
+      counterEls.forEach(el=>el.textContent=(el.getAttribute("data-pre")||"")+el.getAttribute("data-to")+(el.getAttribute("data-suf")||"")); counterEls=[]; }
+    initMenu(); initForm();
+    window.addEventListener("scroll",onScroll,{passive:true});
+    window.addEventListener("resize",onScroll,{passive:true});
+    update();
+    // safety passes (fonts/layout settling, environments without scroll events)
+    setTimeout(update,150); setTimeout(update,600);
+    window.addEventListener("load",()=>{ update(); setTimeout(update,200); });
+  }
+  if(document.readyState!=="loading") boot(); else document.addEventListener("DOMContentLoaded",boot);
+})();

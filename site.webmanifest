@@ -1,0 +1,14 @@
+{
+  "name": "Yuxinu",
+  "short_name": "Yuxinu",
+  "description": "Estruturamos, captamos e governamos projetos de longo prazo ao lado dos povos originários da Amazônia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2D4A40",
+  "theme_color": "#2D4A40",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
