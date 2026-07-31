@@ -30,7 +30,7 @@
       "num.l1":"Anos de experiência","num.d1":"Acolhimento, acompanhamento e direcionamento de povos originários no Brasil e no exterior.",
       "num.l2":"Comitivas acompanhadas","num.d2":"Logística, agenda, intermediação e cuidado humano em viagens estratégicas.",
       "num.l3":"Captados para diversos povos","num.d3":"Recursos viabilizados e direcionados a projetos de território, cultura e infraestrutura.",
-      "num.l4":"Etnias impactadas","num.d4":"Um trabalho alinhado aos 17 Objetivos de Desenvolvimento Sustentável (ODS) da ONU, povo a povo, em todo o país.",
+      "num.l4":"Aldeias e TIs","num.d4":"Presença direta em territórios, do acolhimento à gestão de projetos ao lado das comunidades.",
 
       "cases.eyebrow":"Cases · O âmago da Yuxinu","cases.title":"O que a confiança já construiu.","cases.lead":"Projetos reais, estruturados, captados, acompanhados e governados ao lado de quem vive o território.",
       "huni.tag":"Povo Huni Kuin · Acre","huni.h":"Floresta em pé e perpetuidade","huni.p":"US$ 2M intermediados, mais de 2.000 ha de propriedade perpétua e mais de 40 comitivas acompanhadas.",
@@ -92,7 +92,7 @@
       "num.l1":"Years of experience","num.d1":"Welcoming, accompanying and guiding Indigenous peoples in Brazil and abroad.",
       "num.l2":"Delegations accompanied","num.d2":"Logistics, agenda, intermediation and human care on strategic journeys.",
       "num.l3":"Raised for various peoples","num.d3":"Resources enabled and directed to land, culture and infrastructure projects.",
-      "num.l4":"Ethnic groups impacted","num.d4":"Work aligned with the UN's 17 Sustainable Development Goals (SDGs), people by people, across the country.",
+      "num.l4":"Villages & Indigenous Lands","num.d4":"Direct presence in territories, from outreach to project management alongside communities.",
 
       "cases.eyebrow":"Cases · The core of Yuxinu","cases.title":"What trust has already built.","cases.lead":"Real projects — structured, raised, accompanied and governed alongside those who live the territory.",
       "huni.tag":"Huni Kuin people · Acre","huni.h":"Standing forest and perpetuity","huni.p":"US$ 2M intermediated, more than 2,000 ha of perpetual land and more than 40 delegations accompanied.",
@@ -154,7 +154,7 @@
       "num.l1":"Años de experiencia","num.d1":"Acogida, acompañamiento y orientación de pueblos originarios en Brasil y en el exterior.",
       "num.l2":"Comitivas acompañadas","num.d2":"Logística, agenda, intermediación y cuidado humano en viajes estratégicos.",
       "num.l3":"Captados para diversos pueblos","num.d3":"Recursos viabilizados y dirigidos a proyectos de territorio, cultura e infraestructura.",
-      "num.l4":"Etnias impactadas","num.d4":"Un trabajo alineado con los 17 Objetivos de Desarrollo Sostenible (ODS) de la ONU, pueblo a pueblo, en todo el país.",
+      "num.l4":"Aldeas y TIs","num.d4":"Presencia directa en territorios, desde la acogida hasta la gestión de proyectos junto a las comunidades.",
 
       "cases.eyebrow":"Casos · El núcleo de Yuxinu","cases.title":"Lo que la confianza ya construyó.","cases.lead":"Proyectos reales, estructurados, captados, acompañados y gobernados junto a quienes viven el territorio.",
       "huni.tag":"Pueblo Huni Kuin · Acre","huni.h":"Selva en pie y perpetuidad","huni.p":"US$ 2M intermediados, más de 2.000 ha de propiedad perpetua y más de 40 comitivas acompañadas.",
