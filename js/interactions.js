@@ -19,15 +19,16 @@
     const nav=document.querySelector(".nav");
     if(nav){ if(y>40){nav.classList.add("nav-solid");nav.classList.remove("nav-top");} else {nav.classList.add("nav-top");nav.classList.remove("nav-solid");} }
     // active nav link
+    let current="";
+    document.querySelectorAll("section[id]").forEach(sec=>{
+      const r=sec.getBoundingClientRect();
+      if(r.top<=vh*0.42 && r.bottom>vh*0.42) current=sec.id;
+    });
     const navLinks=document.querySelectorAll('.nav-links a[href^="#"]');
-    if(navLinks.length){
-      let current="";
-      document.querySelectorAll("section[id]").forEach(sec=>{
-        const r=sec.getBoundingClientRect();
-        if(r.top<=vh*0.42 && r.bottom>vh*0.42) current=sec.id;
-      });
-      navLinks.forEach(a=>a.classList.toggle("active", a.getAttribute("href")==="#"+current));
-    }
+    navLinks.forEach(a=>a.classList.toggle("active", a.getAttribute("href")==="#"+current));
+
+    const fab=document.querySelector(".fab-contact");
+    if(fab) fab.classList.toggle("show", y>vh*0.6 && current!=="contato");
 
     for(let i=revealEls.length-1;i>=0;i--){
       const el=revealEls[i], r=el.getBoundingClientRect();

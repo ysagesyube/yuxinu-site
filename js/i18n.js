@@ -30,13 +30,13 @@
       "num.l1":"Anos de experiência","num.d1":"Acolhimento, acompanhamento e direcionamento de povos originários no Brasil e no exterior.",
       "num.l2":"Comitivas acompanhadas","num.d2":"Logística, agenda, intermediação e cuidado humano em viagens estratégicas.",
       "num.l3":"Captados para diversos povos","num.d3":"Recursos viabilizados e direcionados a projetos de território, cultura e infraestrutura.",
-      "num.l4":"Povos impactados","num.d4":"Uma rede de relação que segue crescendo, povo a povo, em todo o país.","num.dezenas":"Dezenas",
+      "num.l4":"Etnias impactadas","num.d4":"Um trabalho alinhado aos 17 Objetivos de Desenvolvimento Sustentável (ODS) da ONU, povo a povo, em todo o país.",
 
       "cases.eyebrow":"Cases · O âmago da Yuxinu","cases.title":"O que a confiança já construiu.","cases.lead":"Projetos reais, estruturados, captados, acompanhados e governados ao lado de quem vive o território.",
-      "huni.tag":"Povo Huni Kuin · Acre","huni.h":"Floresta em pé e perpetuidade","huni.p":"US$ 2M intermediados, 4.000 ha de propriedade perpétua e mais de 40 comitivas acompanhadas.",
-      "noke.tag":"Povo Noke Koî · Acre","noke.h":"Cultura viva, território forte","noke.p":"Co-gestão da associação desde a fundação, festival cultural, documentário e + R$ 100 mil intermediados.",
+      "huni.tag":"Povo Huni Kuin · Acre","huni.h":"Floresta em pé e perpetuidade","huni.p":"US$ 2M intermediados, mais de 2.000 ha de propriedade perpétua e mais de 40 comitivas acompanhadas.",
+      "noke.tag":"Povo Noke Koî · Acre","noke.h":"Cultura viva, território forte","noke.p":"Co-gestão da associação desde a fundação, festival cultural e documentário.",
       "pataxo.tag":"Povo Pataxó · Bahia","pataxo.h":"Acolhimento e cuidado","pataxo.p":"Acompanhamento de comitivas e direcionamento de tratamentos médicos, com cuidado humano em cada etapa.",
-      "povos.lead":"E uma rede de dezenas de povos.","povos.more":"+ dezenas de povos",
+      "povos.lead":"E uma rede de mais de 20 etnias.","povos.more":"+ de 20 etnias",
 
       "mod.eyebrow":"Modelos de negócio","mod.title":"Quatro modelos, uma lógica.","mod.lead":"Cada serviço se sustenta sobre a mesma base de receita, combinada conforme a natureza de cada relação.",
       "mod.m1mk":"Modelo 01","mod.m1h":"Intermediação de investimentos","mod.m1p":"Viabilizamos sua doação de maneira segura, rastreável e íntegra até o destino.",
@@ -56,6 +56,8 @@
       "ct.eyebrow":"Contato","ct.title":"Vamos estruturar o próximo projeto juntos.","ct.lead":"Conte o que você quer viabilizar. Respondemos com os próximos passos.",
       "form.nome":"Nome","form.nome_ph":"Seu nome","form.email":"E-mail","form.email_ph":"seu@email.com","form.org":"Organização","form.org_ph":"Fundação, empresa, family office…","form.msg":"Mensagem","form.msg_ph":"Como podemos colaborar?","form.send":"Enviar mensagem","form.ok":"Obrigado! Sua mensagem foi enviada.","form.err":"Não foi possível enviar agora. Tente novamente ou escreva para yuxinu@yuxinu.org.",
       "ct.email_lbl":"Captação & parcerias","ct.loc_lbl":"Onde estamos","ct.loc_val":"São Paulo · Paraná · Paraguai","ct.site_lbl":"Website","ct.sign":"Transformamos confiança em <span class=\"accent\">impacto</span>.",
+
+      "fab.label":"Fale conosco","fab.aria":"Falar com a Yuxinu",
 
       "foot.tagline":"Estruturamos relações de confiança capazes de transformar recursos em impacto duradouro.",
       "foot.nav_h":"Navegação","foot.contact_h":"Contato","foot.rights":"© 2026 Yuxinu. Todos os direitos reservados.","foot.sign":"Confiança · Capital · Impacto"
@@ -90,13 +92,13 @@
       "num.l1":"Years of experience","num.d1":"Welcoming, accompanying and guiding Indigenous peoples in Brazil and abroad.",
       "num.l2":"Delegations accompanied","num.d2":"Logistics, agenda, intermediation and human care on strategic journeys.",
       "num.l3":"Raised for various peoples","num.d3":"Resources enabled and directed to land, culture and infrastructure projects.",
-      "num.l4":"Peoples impacted","num.d4":"A network of relationships that keeps growing, people by people, across the country.","num.dezenas":"Dozens",
+      "num.l4":"Ethnic groups impacted","num.d4":"Work aligned with the UN's 17 Sustainable Development Goals (SDGs), people by people, across the country.",
 
       "cases.eyebrow":"Cases · The core of Yuxinu","cases.title":"What trust has already built.","cases.lead":"Real projects — structured, raised, accompanied and governed alongside those who live the territory.",
-      "huni.tag":"Huni Kuin people · Acre","huni.h":"Standing forest and perpetuity","huni.p":"US$ 2M intermediated, 4,000 ha of perpetual land and more than 40 delegations accompanied.",
-      "noke.tag":"Noke Koî people · Acre","noke.h":"Living culture, strong land","noke.p":"Co-management of the association since its founding, cultural festival, documentary and + R$ 100k intermediated.",
+      "huni.tag":"Huni Kuin people · Acre","huni.h":"Standing forest and perpetuity","huni.p":"US$ 2M intermediated, more than 2,000 ha of perpetual land and more than 40 delegations accompanied.",
+      "noke.tag":"Noke Koî people · Acre","noke.h":"Living culture, strong land","noke.p":"Co-management of the association since its founding, cultural festival and documentary.",
       "pataxo.tag":"Pataxó people · Bahia","pataxo.h":"Welcome and care","pataxo.p":"Accompanying delegations and guiding medical treatments, with human care at every step.",
-      "povos.lead":"And a network of dozens of peoples.","povos.more":"+ dozens of peoples",
+      "povos.lead":"And a network of more than 20 ethnic groups.","povos.more":"+20 ethnic groups",
 
       "mod.eyebrow":"Business models","mod.title":"Four models, one logic.","mod.lead":"Each service rests on the same revenue base, combined according to the nature of each relationship.",
       "mod.m1mk":"Model 01","mod.m1h":"Investment intermediation","mod.m1p":"We make your donation safe, traceable and intact, all the way to its destination.",
@@ -116,6 +118,8 @@
       "ct.eyebrow":"Contact","ct.title":"Let's structure the next project together.","ct.lead":"Tell us what you want to make possible. We'll reply with the next steps.",
       "form.nome":"Name","form.nome_ph":"Your name","form.email":"Email","form.email_ph":"you@email.com","form.org":"Organization","form.org_ph":"Foundation, company, family office…","form.msg":"Message","form.msg_ph":"How can we collaborate?","form.send":"Send message","form.ok":"Thank you! Your message has been sent.","form.err":"Couldn't send right now. Please try again or email yuxinu@yuxinu.org.",
       "ct.email_lbl":"Fundraising & partnerships","ct.loc_lbl":"Where we are","ct.loc_val":"São Paulo · Paraná · Paraguay","ct.site_lbl":"Website","ct.sign":"We turn trust into <span class=\"accent\">impact</span>.",
+
+      "fab.label":"Get in touch","fab.aria":"Talk to Yuxinu",
 
       "foot.tagline":"We build relationships of trust capable of turning resources into lasting impact.",
       "foot.nav_h":"Navigation","foot.contact_h":"Contact","foot.rights":"© 2026 Yuxinu. All rights reserved.","foot.sign":"Trust · Capital · Impact"
@@ -150,13 +154,13 @@
       "num.l1":"Años de experiencia","num.d1":"Acogida, acompañamiento y orientación de pueblos originarios en Brasil y en el exterior.",
       "num.l2":"Comitivas acompañadas","num.d2":"Logística, agenda, intermediación y cuidado humano en viajes estratégicos.",
       "num.l3":"Captados para diversos pueblos","num.d3":"Recursos viabilizados y dirigidos a proyectos de territorio, cultura e infraestructura.",
-      "num.l4":"Pueblos impactados","num.d4":"Una red de relaciones que sigue creciendo, pueblo a pueblo, en todo el país.","num.dezenas":"Decenas",
+      "num.l4":"Etnias impactadas","num.d4":"Un trabajo alineado con los 17 Objetivos de Desarrollo Sostenible (ODS) de la ONU, pueblo a pueblo, en todo el país.",
 
       "cases.eyebrow":"Casos · El núcleo de Yuxinu","cases.title":"Lo que la confianza ya construyó.","cases.lead":"Proyectos reales, estructurados, captados, acompañados y gobernados junto a quienes viven el territorio.",
-      "huni.tag":"Pueblo Huni Kuin · Acre","huni.h":"Selva en pie y perpetuidad","huni.p":"US$ 2M intermediados, 4.000 ha de propiedad perpetua y más de 40 comitivas acompañadas.",
-      "noke.tag":"Pueblo Noke Koî · Acre","noke.h":"Cultura viva, territorio fuerte","noke.p":"Cogestión de la asociación desde su fundación, festival cultural, documental y + R$ 100 mil intermediados.",
+      "huni.tag":"Pueblo Huni Kuin · Acre","huni.h":"Selva en pie y perpetuidad","huni.p":"US$ 2M intermediados, más de 2.000 ha de propiedad perpetua y más de 40 comitivas acompañadas.",
+      "noke.tag":"Pueblo Noke Koî · Acre","noke.h":"Cultura viva, territorio fuerte","noke.p":"Cogestión de la asociación desde su fundación, festival cultural y documental.",
       "pataxo.tag":"Pueblo Pataxó · Bahía","pataxo.h":"Acogida y cuidado","pataxo.p":"Acompañamiento de comitivas y orientación de tratamientos médicos, con cuidado humano en cada etapa.",
-      "povos.lead":"Y una red de decenas de pueblos.","povos.more":"+ decenas de pueblos",
+      "povos.lead":"Y una red de más de 20 etnias.","povos.more":"+20 etnias",
 
       "mod.eyebrow":"Modelos de negocio","mod.title":"Cuatro modelos, una lógica.","mod.lead":"Cada servicio se sostiene sobre la misma base de ingresos, combinada según la naturaleza de cada relación.",
       "mod.m1mk":"Modelo 01","mod.m1h":"Intermediación de inversiones","mod.m1p":"Viabilizamos tu donación de forma segura, trazable e íntegra hasta su destino.",
@@ -177,6 +181,8 @@
       "form.nome":"Nombre","form.nome_ph":"Tu nombre","form.email":"Correo","form.email_ph":"tu@correo.com","form.org":"Organización","form.org_ph":"Fundación, empresa, family office…","form.msg":"Mensaje","form.msg_ph":"¿Cómo podemos colaborar?","form.send":"Enviar mensaje","form.ok":"¡Gracias! Tu mensaje fue enviado.","form.err":"No se pudo enviar ahora. Intenta de nuevo o escribe a yuxinu@yuxinu.org.",
       "ct.email_lbl":"Captación y alianzas","ct.loc_lbl":"Dónde estamos","ct.loc_val":"São Paulo · Paraná · Paraguay","ct.site_lbl":"Sitio web","ct.sign":"Transformamos la confianza en <span class=\"accent\">impacto</span>.",
 
+      "fab.label":"Hablemos","fab.aria":"Hablar con Yuxinu",
+
       "foot.tagline":"Construimos relaciones de confianza capaces de transformar recursos en impacto duradero.",
       "foot.nav_h":"Navegación","foot.contact_h":"Contacto","foot.rights":"© 2026 Yuxinu. Todos los derechos reservados.","foot.sign":"Confianza · Capital · Impacto"
     }
@@ -195,6 +201,9 @@
     });
     document.querySelectorAll("[data-i18n-ph]").forEach(el=>{
       const k = el.getAttribute("data-i18n-ph"); const v = dict[k]; if(v!=null) el.placeholder = v;
+    });
+    document.querySelectorAll("[data-i18n-aria]").forEach(el=>{
+      const k = el.getAttribute("data-i18n-aria"); const v = dict[k]; if(v!=null) el.setAttribute("aria-label", v);
     });
     document.querySelectorAll(".lang button[data-lang]").forEach(b=>{
       b.classList.toggle("active", b.getAttribute("data-lang")===lang);
