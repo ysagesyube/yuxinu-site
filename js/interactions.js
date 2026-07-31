@@ -30,6 +30,16 @@
     const fab=document.querySelector(".fab-contact");
     if(fab) fab.classList.toggle("show", y>vh*0.6 && current!=="contato");
 
+    const snakeTrack=document.querySelector(".snake-rail-track");
+    if(snakeTrack){
+      const rail=snakeTrack.parentElement, img=snakeTrack.querySelector(".snake-rail-img");
+      const imgH=img.offsetHeight, railH=rail.offsetHeight;
+      const travel=Math.max(0, imgH-railH);
+      const maxScroll=Math.max(1, document.documentElement.scrollHeight-vh);
+      const pct=Math.min(1, Math.max(0, y/maxScroll));
+      snakeTrack.style.transform="translate3d(0,"+(-pct*travel).toFixed(1)+"px,0)";
+    }
+
     for(let i=revealEls.length-1;i>=0;i--){
       const el=revealEls[i], r=el.getBoundingClientRect();
       if(r.top < vh*0.90 && r.bottom > 0){ el.classList.add("in"); revealEls.splice(i,1); }
