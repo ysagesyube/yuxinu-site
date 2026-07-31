@@ -368,7 +368,10 @@ section{ position:relative; overflow:hidden; scroll-margin-top:80px; }
   overflow:hidden; pointer-events:none;
   mask-image:linear-gradient(to bottom, transparent 0, black 80px, black calc(100% - 80px), transparent 100%);
   -webkit-mask-image:linear-gradient(to bottom, transparent 0, black 80px, black calc(100% - 80px), transparent 100%);
+  opacity:0; transform:translateY(-40px);
+  transition:opacity .6s var(--ease), transform .6s var(--ease);
 }
+.snake-rail.show{ opacity:1; transform:translateY(0); }
 .snake-rail-track{ position:absolute; top:0; left:0; width:100%; will-change:transform; }
 .snake-rail-img{ display:block; width:100%; height:auto; }
 @media (prefers-reduced-motion:no-preference){
