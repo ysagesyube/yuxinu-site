@@ -54,7 +54,7 @@
       "ap.cta":"Quero apoiar",
 
       "ct.eyebrow":"Contato","ct.title":"Vamos estruturar o próximo projeto juntos.","ct.lead":"Conte o que você quer viabilizar. Respondemos com os próximos passos.",
-      "form.nome":"Nome","form.nome_ph":"Seu nome","form.email":"E-mail","form.email_ph":"seu@email.com","form.org":"Organização","form.org_ph":"Fundação, empresa, family office…","form.msg":"Mensagem","form.msg_ph":"Como podemos colaborar?","form.send":"Enviar mensagem","form.ok":"Obrigado! Abrindo seu e-mail para enviar.",
+      "form.nome":"Nome","form.nome_ph":"Seu nome","form.email":"E-mail","form.email_ph":"seu@email.com","form.org":"Organização","form.org_ph":"Fundação, empresa, family office…","form.msg":"Mensagem","form.msg_ph":"Como podemos colaborar?","form.send":"Enviar mensagem","form.ok":"Obrigado! Sua mensagem foi enviada.","form.err":"Não foi possível enviar agora. Tente novamente ou escreva para yuxinu@yuxinu.org.",
       "ct.email_lbl":"Captação & parcerias","ct.loc_lbl":"Onde estamos","ct.loc_val":"São Paulo · Paraná · Paraguai","ct.site_lbl":"Website","ct.sign":"Transformamos confiança em <span class=\"accent\">impacto</span>.",
 
       "foot.tagline":"Estruturamos relações de confiança capazes de transformar recursos em impacto duradouro.",
@@ -114,7 +114,7 @@
       "ap.cta":"I want to support",
 
       "ct.eyebrow":"Contact","ct.title":"Let's structure the next project together.","ct.lead":"Tell us what you want to make possible. We'll reply with the next steps.",
-      "form.nome":"Name","form.nome_ph":"Your name","form.email":"Email","form.email_ph":"you@email.com","form.org":"Organization","form.org_ph":"Foundation, company, family office…","form.msg":"Message","form.msg_ph":"How can we collaborate?","form.send":"Send message","form.ok":"Thank you! Opening your email to send.",
+      "form.nome":"Name","form.nome_ph":"Your name","form.email":"Email","form.email_ph":"you@email.com","form.org":"Organization","form.org_ph":"Foundation, company, family office…","form.msg":"Message","form.msg_ph":"How can we collaborate?","form.send":"Send message","form.ok":"Thank you! Your message has been sent.","form.err":"Couldn't send right now. Please try again or email yuxinu@yuxinu.org.",
       "ct.email_lbl":"Fundraising & partnerships","ct.loc_lbl":"Where we are","ct.loc_val":"São Paulo · Paraná · Paraguay","ct.site_lbl":"Website","ct.sign":"We turn trust into <span class=\"accent\">impact</span>.",
 
       "foot.tagline":"We build relationships of trust capable of turning resources into lasting impact.",
@@ -174,7 +174,7 @@
       "ap.cta":"Quiero apoyar",
 
       "ct.eyebrow":"Contacto","ct.title":"Estructuremos juntos el próximo proyecto.","ct.lead":"Cuéntanos qué quieres hacer posible. Respondemos con los próximos pasos.",
-      "form.nome":"Nombre","form.nome_ph":"Tu nombre","form.email":"Correo","form.email_ph":"tu@correo.com","form.org":"Organización","form.org_ph":"Fundación, empresa, family office…","form.msg":"Mensaje","form.msg_ph":"¿Cómo podemos colaborar?","form.send":"Enviar mensaje","form.ok":"¡Gracias! Abriendo tu correo para enviar.",
+      "form.nome":"Nombre","form.nome_ph":"Tu nombre","form.email":"Correo","form.email_ph":"tu@correo.com","form.org":"Organización","form.org_ph":"Fundación, empresa, family office…","form.msg":"Mensaje","form.msg_ph":"¿Cómo podemos colaborar?","form.send":"Enviar mensaje","form.ok":"¡Gracias! Tu mensaje fue enviado.","form.err":"No se pudo enviar ahora. Intenta de nuevo o escribe a yuxinu@yuxinu.org.",
       "ct.email_lbl":"Captación y alianzas","ct.loc_lbl":"Dónde estamos","ct.loc_val":"São Paulo · Paraná · Paraguay","ct.site_lbl":"Sitio web","ct.sign":"Transformamos la confianza en <span class=\"accent\">impacto</span>.",
 
       "foot.tagline":"Construimos relaciones de confianza capaces de transformar recursos en impacto duradero.",

@@ -65,17 +65,24 @@
     if(!form) return;
     form.addEventListener("submit",e=>{
       e.preventDefault();
-      const d=new FormData(form);
-      const get=k=>(d.get(k)||"").toString().trim();
-      const nome=get("nome"),email=get("email"),org=get("org"),msg=get("msg");
       const lang=window.__yxLang||"pt";
       const dict=(window.YuxinuI18N&&window.YuxinuI18N.dict[lang])||{};
-      const subjMap={pt:"Contato pelo site — ",en:"Website contact — ",es:"Contacto desde el sitio — "};
-      const subject=(subjMap[lang]||subjMap.pt)+(org||nome||"Yuxinu");
-      const body="Nome / Name: "+nome+"\nE-mail: "+email+"\nOrganização / Organization: "+org+"\n\n"+msg;
       const status=form.querySelector(".form-status");
-      if(status) status.textContent=dict["form.ok"]||"";
-      window.location.href="mailto:yuxinu@yuxinu.org?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+      const submitBtn=form.querySelector(".submit");
+      if(submitBtn) submitBtn.disabled=true;
+      const body=new URLSearchParams(new FormData(form)).toString();
+      fetch("/", { method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"}, body })
+        .then(res=>{
+          if(!res.ok) throw new Error("submit failed: "+res.status);
+          if(status) status.textContent=dict["form.ok"]||"";
+          form.reset();
+        })
+        .catch(()=>{
+          if(status) status.textContent=dict["form.err"]||"";
+        })
+        .finally(()=>{
+          if(submitBtn) submitBtn.disabled=false;
+        });
     });
   }
 
