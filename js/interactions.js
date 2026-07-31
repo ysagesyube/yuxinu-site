@@ -35,12 +35,13 @@
       const hero=document.querySelector(".hero");
       if(hero) snakeRail.classList.toggle("show", y > hero.offsetHeight*0.85);
       const snakeTrack=snakeRail.querySelector(".snake-rail-track");
-      const img=snakeRail.querySelector(".snake-rail-img");
-      const imgH=img.offsetHeight, railH=snakeRail.offsetHeight;
-      const travel=Math.max(0, imgH-railH);
+      const trackH=snakeTrack.offsetHeight, railH=snakeRail.offsetHeight;
+      const fade=80, startY=fade+10;
+      const endY=Math.max(startY, railH-fade-trackH);
+      const travel=endY-startY;
       const maxScroll=Math.max(1, document.documentElement.scrollHeight-vh);
       const pct=Math.min(1, Math.max(0, y/maxScroll));
-      snakeTrack.style.transform="translate3d(0,"+(-pct*travel).toFixed(1)+"px,0)";
+      snakeTrack.style.transform="translate3d(0,"+(startY+pct*travel).toFixed(1)+"px,0)";
     }
 
     for(let i=revealEls.length-1;i>=0;i--){
