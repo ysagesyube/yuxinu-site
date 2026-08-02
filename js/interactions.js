@@ -30,20 +30,6 @@
     const fab=document.querySelector(".fab-contact");
     if(fab) fab.classList.toggle("show", y>vh*0.6 && current!=="contato");
 
-    const snakeRail=document.querySelector(".snake-rail");
-    if(snakeRail){
-      const hero=document.querySelector(".hero");
-      if(hero) snakeRail.classList.toggle("show", y > hero.offsetHeight*0.85);
-      const snakeTrack=snakeRail.querySelector(".snake-rail-track");
-      const trackH=snakeTrack.offsetHeight, railH=snakeRail.offsetHeight;
-      const fade=80, startY=fade+10;
-      const endY=Math.max(startY, railH-fade-trackH);
-      const travel=endY-startY;
-      const maxScroll=Math.max(1, document.documentElement.scrollHeight-vh);
-      const pct=Math.min(1, Math.max(0, y/maxScroll));
-      snakeTrack.style.transform="translate3d(0,"+(startY+pct*travel).toFixed(1)+"px,0)";
-    }
-
     for(let i=revealEls.length-1;i>=0;i--){
       const el=revealEls[i], r=el.getBoundingClientRect();
       if(r.top < vh*0.90 && r.bottom > 0){ el.classList.add("in"); revealEls.splice(i,1); }
